@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Caio Rocha">
+    <meta name="description" content="Formulario para agendamento para Base aérea de Recife">
+    <meta name="keywords" content="formulario, HTML, CSS, desenvolvimento">
+    <title>Agendamento SFARD</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+</head>
+
+<body>
+    <div class="logo">
+        <img class="fab" src="img/logo-fab.png" alt="logo-fab">
+        <h1>SEÇÃO DE FARDAMENTO <br> Base Aérea de Recife</h1>
+        <img class="barf" src="img/2_barf.png" alt="logo-barf">
+    </div>
+
+    <p class="dias">Dias de Atendimento: <br> Segunda-feira, Quarta-feira e Sexta-feira
+    </p>
+    <form>
+        <fieldset>
+            <legend>PREENCHA COM ATENÇÃO</legend>
+            <table>
+                <tr>
+                    <td><label for="posto">Posto</label></td>
+                    <td>
+                        <select>
+                            <option>S2</option>
+                            <option>S1</option>
+                            <option>CB</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="nome">Nome de Guerra</label></td>
+                    <td><input type="text" name="nome" autocomplete required></td>
+                </tr>
+                <tr>
+                    <td><label for="om">OM</label></td>
+                    <td>
+                        <select>
+                            <option>BARF</option>
+                            <option>GSD</option>
+                            <option>CINDACTA III</option>
+                            <option>HARF</option>
+                            <option>OARF</option>
+                            <option>PARF</option>
+                            <option>SERIPA II</option>
+                            <option>SEREP-RF</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="turma">Turma</label></td>
+                    <td><input type="text" name="turma" autocomplete required></td>
+
+                </tr>
+                <tr>
+                    <td><label for="secao">Seção</label></td>
+                    <td><input type="text" name="secao" autocomplete required></td>
+                </tr>
+                <tr>
+                    <td><label for="telefone">Telefone</label></td>
+                    <td><input type="number" name="telefone" autocomplete required></td>
+                </tr>
+                <tr>
+                    <td><label for="observacao">Observações</label></td>
+                    <td>
+                        <input id="observacao" type="text" name="observacao" autocomplete
+                            placeholder="Observações, se necessário.">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="agendamento">Agendamento</label></td>
+                    <td>
+                        <input id="campoData" type="date" name="agendamento" autocomplete required>
+                    </td>
+                </tr>
+
+            </table>
+        </fieldset>
+        <br>
+        <button type="submit" class="btn">Confirmar Agendamento</button>
+    </form>
+    <footer> Desenvolvedor CB CAIO | Copyright © Julho/2022</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
